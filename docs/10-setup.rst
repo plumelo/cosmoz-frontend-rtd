@@ -58,7 +58,7 @@ Basic Usage
 
 .. todo:: Link to generic git guide for common tasks
 
-.. todo:: Git flow info (Github? Gitflow? Neovici?)
+.. todo:: Git flow info (Github? Gitflow? Neovici? PRs?)
 
 Fetch changes from remote repo
 """"""""""""""""""""""""""""""

@@ -1,3 +1,5 @@
+.. _public-github:
+
 Public Cosmoz elements on GitHub
 ================================
 
@@ -73,6 +75,8 @@ available in cosmoz-omnitable instantly.
 
 Development
 -----------
+
+.. todo:: Info on PRs
 
 Run ``polymer serve`` in the component directory to serve up that component in a small web server locally.
 

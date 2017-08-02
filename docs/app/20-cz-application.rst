@@ -1,5 +1,5 @@
-The frontend app setup
-======================
+``cz-application``
+==================
 
 .. _cosmoz-page-router:
 

@@ -16,6 +16,13 @@ help others.
 
     Used to store the source code(?).
 
+  CD
+    `Continuous delivery <https://en.wikipedia.org/wiki/Continuous_delivery>`_
+
+  CI
+    `Continuous integration <https://en.wikipedia.org/wiki/Continuous_integration>`_
+
+
   Swagger
     An API reference for the backend, also available in the bottom right corner in Cosmoz debug
 

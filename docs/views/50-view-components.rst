@@ -1,8 +1,7 @@
 View components
 ===============
 
-cz-\* components are not intended for open source publishing but
-cosmoz-\* components are.
+Components used in Cosmoz views.
 
 .. _cz-apicall::
 

@@ -3,6 +3,22 @@
 GitHub and Git
 --------------
 
+Basic git usage
+~~~~~~~~~~~~~~~
+
+http://rogerdudler.github.io/git-guide/
+
+Repository configuration
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+For each component repository::
+
+    $ git config pull.rebase true
+    $ git config user.name "Firstname Lastname"
+    $ git config user.email "your.name@domain.tld"
+
+.. note:: These settings can be made machine-wide by adding the ``--global`` option.
+
 Submitting changes
 ~~~~~~~~~~~~~~~~~~
 

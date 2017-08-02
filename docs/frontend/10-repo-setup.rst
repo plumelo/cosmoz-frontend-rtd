@@ -51,8 +51,7 @@ Create the file ``.git/hooks/commit-msg`` with the following content:
 
         - Default hash-URL (because of folder path?)
 
-
--  Open project in Visual Studio Code::
+-  Open project in Visual Studio Code:
 
 :menuselection:`File --> Open Folder… --> Find cosmoz3-frontend folder --> OK`
 

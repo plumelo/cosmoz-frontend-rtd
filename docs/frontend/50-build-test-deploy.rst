@@ -8,7 +8,7 @@ This is managed through git :ref:`git-deployment`.
 .. todo:: Polymer build
 
 
-.. _jenkins::
+.. _jenkins:
 
 Jenkins
 ~~~~~~~

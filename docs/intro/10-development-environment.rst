@@ -15,7 +15,7 @@ Follow the installation instructions for each of them below to install them in v
 * `polymer-ide <https://marketplace.visualstudio.com/items?itemName=polymer.polymer-ide>`_ - Provides linting, autocompletion, and more for web components
 
 `NodeJS <https://nodejs.org/en/download/>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Note to Debian and other similar Linux based OS developers: the NodeJS version in the OS repos are outdated
 (for Debian Stable anyway…). Follow the instructions at https://nodejs.org/en/download/package-manager/

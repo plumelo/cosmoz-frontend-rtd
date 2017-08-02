@@ -3,7 +3,7 @@ View components
 
 Components used in Cosmoz views.
 
-.. _cz-apicall::
+.. _cz-apicall:
 
 cz-apicall
 ----------
@@ -39,8 +39,8 @@ component, example:
 
 .. code-block:: html
 
-    <cz-apicall ... data="{{ supplierListData }}"></cz-apicall>
-    <cosmoz-omnitable data="[[ _getSuppliers(supplierListData) ]] ...>...</cosmoz-omnitable>
+    <cz-apicall data="{{ supplierListData }}"></cz-apicall>
+    <cosmoz-omnitable data="[[ _getSuppliers(supplierListData) ]]"></cosmoz-omnitable>
 
 This will reduce the need of a computed property which would mean “one
 more logic step to follow” and also highlight that the data property for

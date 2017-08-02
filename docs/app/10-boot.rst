@@ -85,7 +85,7 @@ Backend config
 .. _cz-login-screen:
 
 cz-login-screen
---------------
+---------------
 
 The (full screen) component used to handle login if the user is not logged in. Toggled by :ref:`cz-start`.
 

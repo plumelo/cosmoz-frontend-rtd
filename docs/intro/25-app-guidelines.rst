@@ -1,8 +1,6 @@
 Application guidelines
 ======================
 
-.. caption:: Core values
-
 We will define and design our core components, views, functions and features
 based on Cosmoz standards, reusability and our own vision of our product future and scope.
 

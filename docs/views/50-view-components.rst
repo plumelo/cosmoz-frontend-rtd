@@ -113,6 +113,12 @@ Explanation
 -  ``params`` will change when the user selects another branch in the right
    menu, or toggles the prioritization of own items
 
+
+.. _cosmoz-bottom-bar:
+
+cosmoz-bottom-bar
+-----------------
+
 .. _cosmoz-bottom-bar-view:
 
 cosmoz-bottom-bar-view
@@ -121,9 +127,10 @@ cosmoz-bottom-bar-view
 Meant to be a placeholder for a view, to provide a bottom bar with
 actions whenever the user is scrolling up or reach the bottom.
 
+https://www.webcomponents.org/element/neovici/cosmoz-bottom-bar
+
 https://github.com/Neovici/cosmoz-bottom-bar
 
-.. todo:: link wc.org docs
 
 .. _cosmoz-data-nav:
 

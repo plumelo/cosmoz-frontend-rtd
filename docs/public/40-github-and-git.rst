@@ -19,6 +19,8 @@ For each component repository::
 
 .. note:: These settings can be made machine-wide by adding the ``--global`` option.
 
+.. _github-submitting-changes:
+
 Submitting changes
 ~~~~~~~~~~~~~~~~~~
 
@@ -33,8 +35,8 @@ Be sure to activate two-factor authentication for GitHub:
 
     https://help.github.com/articles/securing-your-account-with-two-factor-authentication-2fa/
 
-.netrc
-~~~~~~
+:file:`.netrc`
+~~~~~~~~~~~~~~
 
 To avoid entering password when pushing to GitHub, use a `.netrc` file.
 

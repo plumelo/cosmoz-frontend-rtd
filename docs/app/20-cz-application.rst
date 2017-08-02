@@ -188,9 +188,4 @@ should be put into the shared-styles shared styling.
 
 Right now, a ``cosmoz3-base`` theme is always imported with base theming.
 
-.. warning:: When changing themes in profile-page, a theme can not be loaded twice without reloading the app.
-
-Vulcanization
--------------
-
-.. todo:: Add info, fix minify, polymer build
+.. warning:: When changing themes in profile-page, a theme can not be loaded twice without reloading the app. 

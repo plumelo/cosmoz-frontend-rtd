@@ -10,10 +10,17 @@ Mostly the same approach as for public elements:
 Documentation
 -------------
 
-Working with the documentation (this)::
+Working with the documentation (this).
+
+Install sphinx + autobuild + rtd theme::
 
     $ sudo apt install python-pip
     $ sudo pip install sphinx sphinx-autobuild sphinx_rtd_theme
+
+Get the source::
+
+    $ git clone https://github.com/Neovici/cosmoz-frontend-rtd
+    $ cd cosmoz-frontend-rtd/docs
 
 .. seealso:: 
 
@@ -21,16 +28,21 @@ Working with the documentation (this)::
 
     http://sphinx-doc.org/latest/install.html
 
-How to write docs:
+Writing docs
+~~~~~~~~~~~~
+
+.. seealso::
 
     https://docs.readthedocs.io/en/latest/index.html
 
     http://www.sphinx-doc.org/en/stable/rest.html
 
-Github repo
+Submitting changes
+~~~~~~~~~~~~~~~~~~
 
-    https://github.com/Neovici/cosmoz-frontend-rtd
+See :ref:`github-submitting-changes` for public elements' :ref:`github-git`
 
-.. todo:: How to update docs (PR-flow)
+Internal component documentation catalog
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. todo:: https://github.com/Polymer/polymer-element-catalog

@@ -12,6 +12,18 @@ ESLint
 All code should be linted with ESLint with the settings configured in the :ref:`eslintrc-json`.
 
 
+JavaScript compatibility
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current code is written with ES5-compatible features.
+
+ES6 code is written where specific features are available for :ref:`supported-platforms`.
+
+Once the build is upgraded to run `polymer build` and transpile, we will start writing ES6 code.
+
+.. seealso:: :ref:`jenkins` 
+
+
 Polymer data binding
 ~~~~~~~~~~~~~~~~~~~~
 

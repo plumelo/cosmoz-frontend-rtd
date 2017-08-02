@@ -5,16 +5,30 @@ Application is setup for :term:`CI`/:term:`CD` through :ref:`jenkins`.
 
 This is managed through git :ref:`git-deployment`.
 
-.. todo:: Polymer build
-
 
 .. _jenkins:
 
 Jenkins
 ~~~~~~~
 
-.. todo:: Explain jenkins pipeline
+Jenkins is responsible for building our different git branches.
 
-    * build
-    * test
-    * deploy 
+Pipeline setup is to:
+
+#. bower install
+#. gulp
+
+    #. vulcanize
+
+#. run tests
+#. deploy on success
+
+.. todo:: Review Pipeline
+
+.. todo::
+
+    ``polymer build``
+
+        With ES6 transpiling - Google Closure?
+
+    ``polymer test``

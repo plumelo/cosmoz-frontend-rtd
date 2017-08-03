@@ -33,7 +33,7 @@ help others.
 | Uses git among others to fetch items.
 | `*https://bower.io/* <https://bower.io/>`__
 
-  `Git https://git-scm.com/`_
+  `Git <https://git-scm.com/>`_
     Git is a version control system (VCS) for tracking changes in computer
     files and coordinating work on those files among multiple people. Used to
     manage the source code.

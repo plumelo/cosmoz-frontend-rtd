@@ -26,21 +26,18 @@ help others.
   Swagger
     An API reference for the backend, also available in the bottom right corner in Cosmoz debug
 
-*Bower*
+  Bower
 
 | A package manager for the web. Used to keep frontend components up to
   date.
 | Uses git among others to fetch items.
 | `*https://bower.io/* <https://bower.io/>`__
 
-*Git*
+  `Git https://git-scm.com/`_
+    Git is a version control system (VCS) for tracking changes in computer
+    files and coordinating work on those files among multiple people. Used to
+    manage the source code.
 
-Git is a version control system (VCS) for tracking changes in computer
-files and
-
-| coordinating work on those files among multiple people. Used to manage
-  the source code.
-| `*https://git-scm.com/* <https://git-scm.com/>`__
 | *GitHub*
 
 | GitHub is a web-based Git repository hosting service.

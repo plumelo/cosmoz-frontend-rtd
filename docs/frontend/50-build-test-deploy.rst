@@ -15,7 +15,7 @@ Jenkins is responsible for building our different git branches.
 
 Pipeline setup is to:
 
-#. bower install
+#. ``bower install``
 #. gulp
 
     #. vulcanize

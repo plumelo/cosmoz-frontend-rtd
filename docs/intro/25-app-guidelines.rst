@@ -10,7 +10,7 @@ Automation and efficiency
 
 Always design with automation in mind.
 Assume that an automatic process is in place and that users only will be interested in deviations.
-To handle deviations, see if there's a way to do it with :term:^assisted automation^.
+To handle deviations, see if there's a way to do it with :term:`assisted automation`.
 If not, see if there's a possiblity to do mass-updates to handle more than one deviation at a time.
 As a last resort, handle deviations one by one.
 

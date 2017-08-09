@@ -95,12 +95,20 @@ For :ref:`webcomponents-org`
                 }
             ],
             "space-in-parens": 2,
-            "valid-jsdoc": 1
+            "valid-jsdoc": 1,
+            "space-infix-ops" : 2,
+            "curly": ["error", "all"],
+            "keyword-spacing": ["error", { "before": true } ],
+            "array-bracket-spacing": ["error", "never"],
+            "comma-style": ["error", "last"],
+            "comma-spacing": ["error", { "after": true }],
+            "key-spacing": ["error", { "beforeColon": false, "afterColon":true }]
         },
         "plugins": [
             "html"
         ],
         "globals": {
+            "Cosmoz": false,
             "CustomElements": false,
             "HTMLImports": false,
             "Polymer": false,

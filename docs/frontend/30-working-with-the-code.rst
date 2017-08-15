@@ -7,8 +7,6 @@ Mostly the same approach as for public elements:
 
     * :ref:`dependency-management`
 
-Documentation
--------------
 
 -  Run frontend development web server Gulp::
 
@@ -32,6 +30,32 @@ Documentation
 -  The local frontend should now be running at http://localhost:3000
 
 
+.. _private_component_docs:
+
+Documentation for private components
+------------------------------------
+
+For now there's a simple, crude way to access the component documentation,
+for example for ``cz-apicall`` when running the ``gulp serve`` server:
+
+    http://localhost:3000/polymer/cz-apicall/index.html
+
+These should be documented the same way as the public repo :ref:`public_repo_documentation`.
+
+
+.. todo::
+
+    - Create a basic listing/catalog of the elements we have
+
+    - Make sure ``gulp serve`` serves ``index.html`` for any directory
+
+    or, preferably:
+
+    - Implement (something like) https://github.com/Polymer/polymer-element-catalog
+
+
+System documentation
+--------------------
 
 Working with the documentation (this).
 
@@ -70,8 +94,3 @@ Submitting changes
 ~~~~~~~~~~~~~~~~~~
 
 See :ref:`github-submitting-changes` for public elements' :ref:`github-git`
-
-Internal component documentation catalog
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. todo:: https://github.com/Polymer/polymer-element-catalog

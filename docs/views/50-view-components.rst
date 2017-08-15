@@ -3,10 +3,11 @@ View components
 
 Components used in Cosmoz views.
 
+
 .. _cz-apicall:
 
-cz-apicall
-----------
+`cz-apicall <http://localhost:3000/polymer/cz-apicall/index.html#cz-apicall>`_
+------------------------------------------------------------------------------
 
 Basically a wrapper for ``iron-ajax``, apart from a few things:
 
@@ -32,7 +33,7 @@ Normally, the API should be designed so that we can bind the data
 property of the ``cz-apicall`` instance as input for another component, like
 :ref:`cosmoz-omnitable`.
 
-Sometimes though, we might want to handle/mangle the data received
+Even though it should be avoided, we might sometimes want to handle/mangle the data received
 before forwarding to another component, and the best way to describe
 this is to call the computing method at the input for the other
 component, example:
@@ -113,33 +114,36 @@ Explanation
 -  ``params`` will change when the user selects another branch in the right
    menu, or toggles the prioritization of own items
 
+.. note::
+
+    By default, ``cz-apicall`` will fire as soon as it's ready, which likely isn't the intent.
+    
+    For ``GET``-requests (and some ``POST``), this usually implies setting ``params`` first, and to make it fire when ``params``
+    are set, use the ``needs-params`` property. (Recommended approach)
+    
+    For other ``POST`` calls that might require user input and should be triggered on a specific event, use
+    ``no-auto`` and manually call ``generateRequest()`` on the element when it should be fired, much like ``iron-ajax``.
+
+
+.. _cz-apicall-batch:
+
+`cz-apicall-batch <http://localhost:3000/polymer/cz-apicall/index.html#cz-apicall-batch>`_
+------------------------------------------------------------------------------------------
 
 .. _cosmoz-bottom-bar:
 
-cosmoz-bottom-bar
------------------
+`cosmoz-bottom-bar <https://www.webcomponents.org/element/neovici/cosmoz-bottom-bar/elements/cosmoz-bottom-bar>`_
+-----------------------------------------------------------------------------------------------------------------
 
 .. _cosmoz-bottom-bar-view:
 
-cosmoz-bottom-bar-view
-----------------------
-
-Meant to be a placeholder for a view, to provide a bottom bar with
-actions whenever the user is scrolling up or reach the bottom.
-
-https://www.webcomponents.org/element/neovici/cosmoz-bottom-bar
-
-https://github.com/Neovici/cosmoz-bottom-bar
-
+`cosmoz-bottom-bar-view <https://www.webcomponents.org/element/neovici/cosmoz-bottom-bar/elements/cosmoz-bottom-bar-view>`_
+---------------------------------------------------------------------------------------------------------------------------
 
 .. _cosmoz-data-nav:
 
-cosmoz-data-nav
----------------
-
-Meant to navigate a list of objects..
-
-.. todo:: Documentation
+`cosmoz-data-nav <http://localhost:3000/polymer/cosmoz-data-nav/index.html>`_
+-----------------------------------------------------------------------------
 
 .. todo:: Move to public github
 
@@ -165,11 +169,6 @@ cosmoz-tab
 
 Will in desktop mode represent a tab, and in mobile mode represent a
 card, unless it contains a cosmoz-tab-cards element.
-
-cosmoz-tab-cards
-~~~~~~~~~~~~~~~~
-
-Placeholder for tab-cards.
 
 .. _cosmoz-tab-card:
 

@@ -31,6 +31,8 @@ https://github.com/Polymer/wct-sauce
 
 .. todo:: Document
 
+.. _public_repo_documentation:
+
 Documentation
 -------------
 

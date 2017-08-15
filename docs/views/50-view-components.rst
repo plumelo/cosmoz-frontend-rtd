@@ -147,6 +147,8 @@ Explanation
 
 .. todo:: Move to public github
 
+.. seealso:: :ref:`view_type_list_queue`
+
 .. _cosmoz-tabs:
 
 cosmoz-tabs

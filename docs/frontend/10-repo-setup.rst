@@ -30,33 +30,10 @@ Create the file ``.git/hooks/commit-msg`` with the following content:
 
     $ npm install
 
-.. todo:: yarn
+.. todo:: ``yarn install`` (seems to work, faster)
 
 -  Install frontend dependencies into the directory::
 
     $ bower install
 
-.. todo:: yarn
-
--  Run frontend development web server Gulp::
-
-    $ gulp serve
-
-.. note::
-    ``polymer serve`` almost works when run in ``app/`` folder in repo.
-
-    .. todo::
-
-        - Google Auth (invalid origin)
-
-        - Default hash-URL (because of folder path?)
-
--  Open project in Visual Studio Code:
-
-:menuselection:`File --> Open Folder… --> Find cosmoz3-frontend folder --> OK`
-
--  Make sure ``app/cz.config.js`` points to the right backend and has the right ``googleClientId`` for Google sign-in
-
--  Visit http://localhost:3000
-
--  Get busy! :)
+.. todo:: ``polymer install`` ? (Currently wraps bower, seems to work)

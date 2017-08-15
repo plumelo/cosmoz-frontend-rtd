@@ -10,6 +10,29 @@ Mostly the same approach as for public elements:
 Documentation
 -------------
 
+-  Run frontend development web server Gulp::
+
+    $ gulp serve
+
+.. note::
+    ``polymer serve`` almost works when run in ``app/`` folder in repo.
+
+    .. todo::
+
+        - Google Auth (invalid origin)
+
+        - Default hash-URL (because of folder path?)
+
+-  Open project in :ref:`vscode`:
+
+:menuselection:`File --> Open Folder… --> Find cosmoz3-frontend folder --> OK`
+
+-  Make sure ``app/cz.config.js`` points to the right backend and has the right ``googleClientId`` for Google sign-in
+
+-  The local frontend should now be running at http://localhost:3000
+
+
+
 Working with the documentation (this).
 
 Install sphinx + autobuild + rtd theme::

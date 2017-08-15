@@ -45,6 +45,12 @@ Get the source::
     $ git clone https://github.com/Neovici/cosmoz-frontend-rtd
     $ cd cosmoz-frontend-rtd/docs
 
+Auto-build and view::
+
+    $ sphinx-autobuild . _build_html
+
+Documentation should be available and auto-reload upon change at http://localhost:8000
+
 .. seealso:: 
 
     https://docs.readthedocs.io/en/latest/getting_started.html

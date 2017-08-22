@@ -6,8 +6,10 @@ Components used in Cosmoz views.
 
 .. _cz-apicall:
 
-`cz-apicall <http://localhost:3000/polymer/cz-apicall/index.html#cz-apicall>`_
-------------------------------------------------------------------------------
+cz-apicall
+----------
+
+http://localhost:3000/polymer/cz-apicall/index.html#cz-apicall
 
 Basically a wrapper for ``iron-ajax``, apart from a few things:
 
@@ -127,23 +129,34 @@ Explanation
 
 .. _cz-apicall-batch:
 
-`cz-apicall-batch <http://localhost:3000/polymer/cz-apicall/index.html#cz-apicall-batch>`_
-------------------------------------------------------------------------------------------
+cz-apicall-batch
+----------------
+
+http://localhost:3000/polymer/cz-apicall/index.html#cz-apicall-batch
+
 
 .. _cosmoz-bottom-bar:
 
-`cosmoz-bottom-bar <https://www.webcomponents.org/element/neovici/cosmoz-bottom-bar/elements/cosmoz-bottom-bar>`_
------------------------------------------------------------------------------------------------------------------
+cosmoz-bottom-bar
+-----------------
+
+https://www.webcomponents.org/element/neovici/cosmoz-bottom-bar/elements/cosmoz-bottom-bar
+
 
 .. _cosmoz-bottom-bar-view:
 
-`cosmoz-bottom-bar-view <https://www.webcomponents.org/element/neovici/cosmoz-bottom-bar/elements/cosmoz-bottom-bar-view>`_
----------------------------------------------------------------------------------------------------------------------------
+cosmoz-bottom-bar-view
+----------------------
+
+https://www.webcomponents.org/element/neovici/cosmoz-bottom-bar/elements/cosmoz-bottom-bar-view
+
 
 .. _cosmoz-data-nav:
 
-`cosmoz-data-nav <http://localhost:3000/polymer/cosmoz-data-nav/index.html>`_
------------------------------------------------------------------------------
+cosmoz-data-nav
+---------------
+
+http://localhost:3000/polymer/cosmoz-data-nav/index.html
 
 .. todo:: Move to public github
 

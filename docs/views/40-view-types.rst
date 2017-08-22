@@ -25,8 +25,12 @@ It is basically a complete view except that:
 “Add”-type views
 ~~~~~~~~~~~~~~~~
 
+.. todo:: Document
+
 “List”-type views
 ~~~~~~~~~~~~~~~~~
+
+.. todo:: Document
 
 .. _view_type_list_queue:
 
@@ -54,3 +58,5 @@ Breakdown:
 
 “View/edit”-type views
 ~~~~~~~~~~~~~~~~~~~~~~
+
+.. todo:: Document

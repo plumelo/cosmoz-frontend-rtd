@@ -193,8 +193,10 @@ Adjust GitHub integration at https://neovici.slack.com/apps/manage, add repo
 
 .. _cosmoz-elements:
 
-`cosmoz-elements <https://github.com/Neovici/cosmoz-elements>`_
----------------------------------------------------------------
+cosmoz-elements
+---------------
+
+https://github.com/Neovici/cosmoz-elements
 
 Add the element to the ``cosmoz-elements`` collection.
 

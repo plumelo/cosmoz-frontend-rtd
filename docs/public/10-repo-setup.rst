@@ -39,7 +39,8 @@ For :ref:`webcomponents-org`
 
 	{
 		"env": {
-			"browser": true
+			"browser": true,
+			"es6": true
 		},
 		"extends": "eslint:recommended",
 		"globals": {
@@ -125,6 +126,10 @@ For :ref:`webcomponents-org`
 			],
 			"radix": "error",
 			"semi": [
+				"error",
+				"always"
+			],
+			"space-before-blocks": [
 				"error",
 				"always"
 			],

@@ -59,6 +59,14 @@ For :ref:`webcomponents-org`
 				"error",
 				"never"
 			],
+			"arrow-parens": [
+				"error",
+				"as-needed"
+			],
+			"arrow-spacing": [
+				"error",
+				{ "before": true, "after": true }
+			],
 			"brace-style": "error",
 			"camelcase": "error",
 			"comma-spacing": [
@@ -75,7 +83,10 @@ For :ref:`webcomponents-org`
 				"error",
 				"all"
 			],
-			"eqeqeq": "error",
+			"eqeqeq": [
+				"error",
+				"smart"
+			],
 			"guard-for-in": "error",
 			"indent": [
 				"error",

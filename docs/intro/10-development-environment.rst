@@ -31,6 +31,7 @@ NPM install of Gulp (web server), bower (package manager), Polymer (library)::
 
 .. todo:: Drop dependency for ``gulp``, use ``polymer build`` / ``polymer serve``
 
+.. todo:: Don't use ``sudo`` with npm
 
 .. _git-setup:
 

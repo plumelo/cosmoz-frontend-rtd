@@ -212,8 +212,6 @@ https://github.com/Neovici/cosmoz-omnitable
 
 .. todo:: Documentation
 
-.. todo:: Move to public github
-
 cz-history
 ----------
 

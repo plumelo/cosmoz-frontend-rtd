@@ -24,10 +24,32 @@ Freetext search, will locally match any row *containing* the written letters.
     OTS - This should be used for data like article numbers, invoice numbers, order numbers,
     order identifiers, descriptions, etc for OTS to avoid requesting huge lists of suggestions.
 
+cosmoz-omnitable-column-amount
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 cosmoz-omnitable-column-autocomplete
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+cosmoz-omnitable-column-boolean
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+cosmoz-omnitable-column-date
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+cosmoz-omnitable-column-datetime
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+cosmoz-omnitable-column-list
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+cosmoz-omnitable-column-list-horizontal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+cosmoz-omnitable-column-number
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+cosmoz-omnitable-column-time
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 Sizing

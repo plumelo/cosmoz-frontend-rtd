@@ -27,10 +27,10 @@ Once the build is upgraded to run `polymer build` and transpile, we will start w
 Polymer data binding
 ~~~~~~~~~~~~~~~~~~~~
 
-Data bindings should be written with spaces::
+Data bindings should be written with spaces, instead of::
 
     [[\_(“Text”, t)]]
 
-instead of::
+do::
 
     [[ \_(“Text”, t) ]]

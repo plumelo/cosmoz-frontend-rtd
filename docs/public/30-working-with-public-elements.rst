@@ -20,7 +20,7 @@ Web component tester
 
 https://github.com/Polymer/web-component-tester
 
-.. todo:: Document
+.. todo:: Document web component tester (WCT)
 
 WCT-Sauce
 ~~~~~~~~~
@@ -29,7 +29,7 @@ Sauce Labs support for web-component-tester
 
 https://github.com/Polymer/wct-sauce
 
-.. todo:: Document
+.. todo:: Document Sauce Labs support for web-component-tester
 
 .. _public_repo_documentation:
 

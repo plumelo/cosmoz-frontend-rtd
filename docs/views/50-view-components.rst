@@ -167,17 +167,12 @@ http://localhost:3000/polymer/cosmoz-data-nav/index.html
 cosmoz-tabs
 -----------
 
-Component to provide information in different sections, for desktop
+Main component, meant as a placeholder for the different tabs used to provide information in different sections, for desktop
 views in tabs and for mobile views as cards.
 
-.. todo:: Documentation
+https://github.com/Neovici/cosmoz-tabs/blob/master/README.md
 
-.. todo:: Move to public github
-
-cosmoz-tabs
-~~~~~~~~~~~
-
-Main component, meant as a placeholder for the different tabs.
+.. todo:: Document cosmoz-tabs
 
 cosmoz-tab
 ~~~~~~~~~~
@@ -210,9 +205,9 @@ Responsive, flexible data grid / table solution for listing/sorting/filtering/gr
 
 https://github.com/Neovici/cosmoz-omnitable
 
-.. todo:: Documentation
+.. todo:: Document cosmoz-omnitable
 
 cz-history
 ----------
 
-.. todo:: Documentation
+.. todo:: Document cz-history

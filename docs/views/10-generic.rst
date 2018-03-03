@@ -23,4 +23,4 @@ View Behaviors
 
 ``Cosmoz.CommonBehaviors``
 
-.. todo:: Document
+.. todo:: Document view behaviors

@@ -25,12 +25,12 @@ It is basically a complete view except that:
 “Add”-type views
 ~~~~~~~~~~~~~~~~
 
-.. todo:: Document
+Views of the "add" consists of one or more forms with fields for the user to fill in in order to add data. This type of view make use of :ref:`iron-form` that wraps :ref:`form` which in turn holds the fields. Sometimes they also use :ref:`cosmoz-tabs` and :ref:`cosmoz-tab` to organize the fields into different sub categories.
 
 “List”-type views
 ~~~~~~~~~~~~~~~~~
 
-.. todo:: Document
+A "list" view does usually include a ``list-core`` view which in turn takes care of the content display using a :ref:`cosmoz-omnitable`. This type of view is like a simplified version of the ``list-queue`` view type.
 
 .. _view_type_list_queue:
 
@@ -186,4 +186,4 @@ If :ref:`cosmoz-data-nav` finds an ``undefined`` item, it will fire a ``need-dat
 “View/edit”-type views
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. todo:: Document
+.. todo:: Document view/edit-type views

@@ -10,6 +10,12 @@ help others.
     Described as the easiest way to deploy and manage your static HTML
     website straight from Bitbucket.
 
+  Assisted Automation
+    User performs one action on one instance (approve N SEK price difference
+    on article X from supplier Y on invoice Z), system then performs same action
+    on all identical instances (approve N SEK price difference
+    on article X from supplier Y).
+
   `Bitbucket <https://bitbucket.org/>`_
     Bitbucket is a web-based hosting service for projects that use Git
     revision control systems.
@@ -43,7 +49,7 @@ help others.
     Also called gulp.js, described as an automated task runner. Used as the web
     server.
 
-  I18next
+  `I18next <https://www.i18next.com/>`_
 
     i18next is a popular internationalization library for browser or any other
     javascript environment (eg. node.js).
@@ -81,3 +87,6 @@ help others.
     To combine all the web components needed into one dependent file. vulcanize
     is a tool for crushing an HTML Import file and its dependent HTML imports
     into one file.
+
+  XHR
+    `XMLHttpRequest <https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest>`_

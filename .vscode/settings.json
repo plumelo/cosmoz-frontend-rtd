@@ -1,0 +1,8 @@
+{
+    "restructuredtext.linter.sphinxDirectives": [
+        "seealso",
+        "toctree",
+        "todo",
+        "todolist"
+    ]
+}

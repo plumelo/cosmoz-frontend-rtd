@@ -28,10 +28,10 @@ Development dependencies are installed when doing ``npm link`` or
 
     {
         "dependencies": {
-            "<dependency name>": "^1.2.3",
+            "<package>": "<version>"
         },
         "devDependencies": {
-            "<dependency name>": "^1.2.3",
+            "<package>": "<version>"
         }
     }
 
@@ -48,8 +48,8 @@ This file is used by the Bower package manager and it has the same sections as
 `Bower <https://github.com/bower/spec/blob/master/json.md>`_ repository on
 GitHub (it's below the example file on that page).
 
-Versioning
-----------
+Dependency versioning and naming
+--------------------------------
 
 Be sure to specify component versions like ``^1.0.0`` and not ``~1.1.3``.
 

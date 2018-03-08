@@ -6,7 +6,7 @@ Creating a repository
 
 Public elements need to have their own repositories on GitHub.
 
-Make sure to create it under the https://github.com/Neovici organization
+Make sure to create it under the https://github.com/Neovici organization.
 
 .. _github-readme:
 
@@ -182,28 +182,32 @@ License
 
 Open Source Cosmoz components use the Apache-2.0 license.
 
-This should be set/present in the files noted below.
+This should be set or present in the files noted below.
 
 :file:`.bower.json`
 ~~~~~~~~~~~~~~~~~~~
 
-The Bower package manager configuration, add a Apache 2.0 section to this file.
+The Bower package manager configuration, add a license property with as the value set to the Apache 2.0 license. to this file.
+
+Ommit the { and } if the file already has these.
 
 .. code-block:: json
 
 	{
-		"license": "Apache-2.0",
+		"license": "Apache-2.0"
 	}
 
 :file:`.package.json`
 ~~~~~~~~~~~~~~~~~~~~~
 
-The NPM package manager configuration, add a Apache 2.0 section to this file.
+The NPM package manager configuration, add a license property with as the value set to the Apache 2.0 license. to this file.
+
+Ommit the { and } if the file already has these.
 
 .. code-block:: json
 
 	{
-		"license": "Apache-2.0",
+		"license": "Apache-2.0"
 	}
 
 :file:`LICENSE / LICENSE.md`

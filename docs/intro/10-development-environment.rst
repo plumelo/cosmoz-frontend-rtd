@@ -90,8 +90,8 @@ Debian / Ubuntu:
 Windows:
     Download the installer from the official `download page <https://nodejs.org/en/download/>`_ and and run it.
 
-Gulp, Bower and Polymer *
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Gulp, Bower and Polymer CLI *
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gulp is a toolkit for automating painful or time-consuming tasks in your
 development workflow, Bower is a front-end package manager and Polymer CLI is

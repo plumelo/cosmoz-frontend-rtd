@@ -16,9 +16,10 @@ Dependencies are defined in different files.
 Installing/updating component dependencies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are two sections in this file of interest for dependencies:
+This file is used by both the NPM and Yarn package managers. There are two
+sections in this file regarding dependencies:
 
-``dependencies`` secction specifies the dependecies and ``devDependencies``
+``dependencies`` section specifies the main dependecies and ``devDependencies``
 section sets dependencies used during development, documentation or test.
 Development dependencies are installed when doing ``npm link`` or
 ``npm install`` from the root of a package.
@@ -34,15 +35,18 @@ Development dependencies are installed when doing ``npm link`` or
         }
     }
 
-For more detailed information about dependencies in this file see the official
-documentation of it at `NPM <https://docs.npmjs.com/files/package.json>`_.
+For more detailed information about dependencies in this file see the
+documentation of it at `NPM <https://docs.npmjs.com/files/package.json>`_. Or
+check the documentation for it at
+`Yarn <https://yarnpkg.com/lang/en/docs/package-json/>`_.
 
 :file:`bower.json`
 ------------------
 
-This file has the same sections as ``package.json``. For more information, see
-the `documentation <https://github.com/bower/spec/blob/master/json.md>`_ for it
-on the Bower repository on GitHub (scroll down, it's below the example file).
+This file is used by the Bower package manager and it has the same sections as
+``package.json``. For more information, see the documentation for it on the
+`Bower <https://github.com/bower/spec/blob/master/json.md>`_ repository on
+GitHub (it's below the example file on that page).
 
 Versioning
 ----------

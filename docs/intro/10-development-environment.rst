@@ -64,13 +64,13 @@ Follow the installation instructions for the editor itself and the extensions
 in the links below to get them too.
 
 Debian / Ubuntu / Windows:
-    * `Visual Studio Code <https://code.visualstudio.com/>`_ * - The editor itself.
+    * `Visual Studio Code <https://code.visualstudio.com/>`_ * - The editor itself
 
-    * `ESLint <https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint>`_ * - Integrates ESLint into VS Code.
+    * `ESLint <https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint>`_ * - Integrates ESLint into VS Code
 
-    * `polymer-ide <https://marketplace.visualstudio.com/items?itemName=polymer.polymer-ide>`_ * - Provides linting, autocompletion, and more for web components.
+    * `polymer-ide <https://marketplace.visualstudio.com/items?itemName=polymer.polymer-ide>`_ * - Provides linting, autocompletion, and more for web components
 
-    * `Marketplace <https://marketplace.visualstudio.com/>`_ - For the inspired to find more extensions.
+    * `Marketplace <https://marketplace.visualstudio.com/>`_ - For the inspired to find more extensions
 
 `NodeJS <https://nodejs.org/en/download/>`_ *
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

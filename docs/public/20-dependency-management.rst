@@ -61,8 +61,9 @@ Use ``org/package#master`` instead of ``org/package``, ``org/package#\*`` or
 If you have specifically tested the component with version 1.2.3, write
 ``^1.2.3`` to document that, even if ``^1.0.0`` will install the same version.
 
-Any public components/repositories can only depend on publically available
-components.
+.. note::
+    Public components/repositories can only depend on publically available
+    components.
 
 Installing component dependencies
 ---------------------------------

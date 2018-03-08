@@ -4,18 +4,18 @@ Repository setup
 Creating a repository
 ---------------------
 
-Public elements need to have their own repositories on GitHub.
+Public element components need to have their own repositories on GitHub.
 
 Make sure to create it under the https://github.com/Neovici organization.
 
 .. _github-readme:
 
-Required files in a public element repository
-----------------------------------------------
+Required files in a public element component repository
+--------------------------------------------------------
 
 :file:`README.md`
 ~~~~~~~~~~~~~~~~~
-This file should contain badges for GitHub, information about what the element does, how
+This file should contain badges for GitHub, information about what the component does, how
 to install it, how to use it, an inline demo for Webcomponents.org and so on.
 
 Badges
@@ -26,14 +26,14 @@ Badges
 	.. note:: Badge URLs suggested here need to be adjusted for the relevant repo.
 
 	Travis-CI
-		This badge shows the element build status for Travis-CI.
+		This badge shows the component build status for Travis-CI.
 
 		.. code-block:: text
 
 			[![Build Status](https://travis-ci.org/Neovici/cosmoz-bottom-bar.svg?branch=master)](https://travis-ci.org/Neovici/cosmoz-bottom-bar)
 
 	Webcomponents.org
-		This badge shows the element publication status on Webcomponents.org.
+		This badge shows the component publication status on Webcomponents.org.
 
 		.. code-block:: text
 
@@ -237,13 +237,13 @@ Finally, all applicable files should have the following notice enclosed in the a
 Integrations
 ------------
 
-There are some integrations needed to be done for the element to make various
-services push information about element changes to Slack.
+There are some integrations needed to be done for the component to make various
+services push information about component changes to Slack.
 
 Travis-CI + Slack
 ~~~~~~~~~~~~~~~~~
 
-Travis-CI and Slack integration enables build notifications for the element
+Travis-CI and Slack integration enables build notifications for the component
 directly in Slack.
 
 In the repository, run::
@@ -267,9 +267,9 @@ Adjust GitHub integration at https://neovici.slack.com/apps/manage, add repo.
 The Cosmoz elements collection
 ------------------------------
 
-Add the element to the `cosmoz-elements <https://github.com/Neovici/cosmoz-elements>`_ collection.
+Add the component to the `cosmoz-elements <https://github.com/Neovici/cosmoz-elements>`_ collection.
 
-Also, some files that are common between all elements can be hosted here.
+Also, some files that are common between all components can be hosted here.
 
 .. todo:: What files? CONTRIBUTING?
 

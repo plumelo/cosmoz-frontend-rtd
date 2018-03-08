@@ -189,7 +189,7 @@ This should be set or present in the files noted below.
 
 The Bower package manager configuration, add a license property with as the value set to the Apache 2.0 license. to this file.
 
-Ommit the { and } if the file already has these.
+Ommit the ``{`` and ``}`` if the file already has these.
 
 .. code-block:: json
 
@@ -202,7 +202,7 @@ Ommit the { and } if the file already has these.
 
 The NPM package manager configuration, add a license property with as the value set to the Apache 2.0 license. to this file.
 
-Ommit the { and } if the file already has these.
+Ommit the ``{`` and ``}`` if the file already has these.
 
 .. code-block:: json
 

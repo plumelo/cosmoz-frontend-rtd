@@ -76,7 +76,7 @@ Updating component dependencies
 Run ``bower update`` periodically to update the dependencies to the latest
 version.
 
-.. todo:: yarn
+.. todo:: Replace bower dependency install/update with yarn equivalence.
 
 .. _github-demo-dev-dependencies:
 
@@ -92,7 +92,7 @@ Bower link
 If developing two components that depend on each other, to avoid pushing
 commits and running bower update all the time, use ``bower link``.
 
-.. todo:: use yarn link
+.. todo:: Replace bower link with yarn link.
 
 Example
 ~~~~~~~

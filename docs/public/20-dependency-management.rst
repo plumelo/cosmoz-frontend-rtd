@@ -18,10 +18,10 @@ Installing/updating component dependencies
 
 There are two sections in this file of interest for dependencies:
 
-``dependencies`` specifies the dependecies and ``devDependencies`` sets
-dependencies used during development, documentation or test. Development
-dependencies are installed when doing npm link or npm install from the root of
-a package.
+``dependencies`` secction specifies the dependecies and ``devDependencies``
+section sets dependencies used during development, documentation or test.
+Development dependencies are installed when doing ``npm link`` or
+``npm install`` from the root of a package.
 
 .. code:: json
 

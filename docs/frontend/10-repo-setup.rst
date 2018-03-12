@@ -100,18 +100,36 @@ Create this file with the following content:
 Install development tools
 -------------------------
 
-To install project development tools (ESLint, gulp plugins, etc), do the
-following standing in the repository root directory::
+Some project development tools - ESLint, gulp plugins and so on - are required
+to develop, test and run the frontend.
+
+Install these by standing in the root of the repository and run this::
 
     $ npm install
 
-.. todo:: ``yarn install`` (seems to work, faster)
+.. todo:: Replace with ``yarn install``, seems to work and does it faster.
 
 Install dependencies
 --------------------
 
-Install frontend dependencies into the root of the repository directory::
+The frontend has several dependencies that are required to be present in the
+``bower_components`` directory.
+
+Go to the root directory of the repository and run this to install them::
 
     $ bower install
 
-.. todo:: ``polymer install`` ? (Currently wraps bower, seems to work)
+.. todo:: Replace with ``polymer install``. Currently wraps bower and it seems
+    to work.
+
+Update dependencies
+-------------------
+
+It is necessary to update the frontend dependencies regularly.
+
+Do this standing in the repository root directory to update them::
+
+    $ bower cache clean
+    $ bower install
+
+.. todo:: Replace ``bower`` with something better.

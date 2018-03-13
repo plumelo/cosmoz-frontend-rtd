@@ -118,31 +118,43 @@ root::
 Local documentation for private components
 ------------------------------------------
 
-There is a simple, crude way to access the component documentation,
-for example for ``cz-apicall`` when running the ``gulp serve`` server:
+The private components are located in ``app/polymer`` under the repository root
+directory. There is a simple, crude way to access the component documentation
+for these when ``gulp serve`` server is running:
 
-    http://localhost:3000/polymer/cz-apicall/index.html
+    http://localhost:3000/polymer/<component name>/index.html
 
-These should be documented the same way as the public repository
+These components should be documented the same way as the public repository
 :ref:`public_repo_documentation`.
 
-
 .. todo::
-
     - Create a basic listing/catalog of the elements we have
 
     - Make sure ``gulp serve`` serves ``index.html`` for any directory
 
-    or, preferably:
-
-    - Implement (something like) https://github.com/Polymer/polymer-element-catalog
+    Or preferably implement something like https://github.com/Polymer/polymer-element-catalog
 
 System documentation
 --------------------
 
-Working with the documentation (this).
+Working with the frontend documentation (this documentation).
 
-Install sphinx + autobuild + rtd theme::
+Install dependencies
+~~~~~~~~~~~~~~~~~~~~
+
+Dependencies for the documentation are installed using the pip package manager.
+
+The documentation dependencies available through this are currently:
+
+- `Sphinx <http://www.sphinx-doc.org/en/master/>`_ - a Python documentation generator
+
+- `sphinx-autobuild <https://pypi.python.org/pypi/sphinx-autobuild>`_ - a script to automatically rebuild the documentation
+
+- `Read the Docs Sphinx Theme <https://github.com/rtfd/sphinx_rtd_theme/blob/master/README.rst>`_ - the Sphinx theme for the documentation
+
+To install pip and the dependencies, do the following:
+
+Debian / Ubuntu::
 
     $ sudo apt install python-pip
     $ sudo pip install sphinx sphinx-autobuild sphinx_rtd_theme

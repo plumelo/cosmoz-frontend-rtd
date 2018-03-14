@@ -78,6 +78,9 @@ There may also be a query parameter besides ``cpl`` named ``backendBaseUri``
 that overrides the property with the same name defined in the
 :file:`app/cz.config.js` file.
 
+.. seealso::
+    * :ref:`url-view-structure`
+
 Linting in Visual Studio Code
 -----------------------------
 

@@ -26,7 +26,7 @@ Environment
 ^^^^^^^^^^^
 
 The environment subdomain part - ``app`` - of the URL defines what
-environment to use. This stick in the URL during the whole visit and there are
+environment to use. This will stick in the URL during navigation and there are
 some to choose from:
 
 * ``app`` - Production environment
@@ -53,7 +53,7 @@ same as the source path located under the ``app/views`` directory in the
 repository root directory, only excluding ``.html`` at the end.
 
 Hash hash parameters
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 Hash has parameters configures states for the specific view loaded::
 
 	#invoices-list-queue-core-tab=queue&invoices-list-core-table-groupOn&invoices-list-core-table-sortOn=dueDate

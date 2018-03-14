@@ -64,8 +64,8 @@ are configured in terms of grouping, sorting and filtering.
 This is to maintain a view-state across reloads and can also act as a
 user-configured state for bookmarks.
 
-Important is to make sure any hash hash parameters making use of this does not
-conflict with other "namespaces", therefore are these parameters excessively
-long currently.
+It is important is to make sure that any hash hash parameters making use of this
+does not conflict with other "namespaces", therefore are these parameters
+excessively long at the moment.
 
 .. todo:: Find a suitable algorithm to shorten hash hash parameter keys while still making them (somewhat) readable.

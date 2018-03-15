@@ -10,43 +10,20 @@ source software if you like to.
 
 Things marked with an asterisk (*) are required.
 
-Before you start
-----------------
-In Linux based operating systems (Debian / Ubuntu) you need to open a
-terminal window (or switch to a TTY) to run the commands presented here.
-There are various ways to do this and they differ between Linux operating
-system variants. Try ``Ctrl + Alt + T`` or look it up for your specific
-operating system version.
-
-In Windows you need to open a console window instead. One way to do it is
-push ``Win + R`` key and type ``cli``. Another is to browse the menus and
-find the console window program.
-
-The terminal / console window plays a big part of the frontend development,
-so get yourself familiar with it if you have not used it before.
-
-All commands should be followed by an ``Enter / Return`` key to run them.
-Exclude the ``$`` in the beginning of each line, it's just there to show
-that it is a command.
-
 Google Chrome / Chromium *
 --------------------------
 
-Google Chrome is a freeware web browser developed by Google. Chromium is an
-open-source Web browser project started by Google, to provide the source code
-for the proprietary Google Chrome browser. Google Chrome is the target web
+Google Chrome is the target web
 browser, but Chromium works just as good as an open source alternative.
 
 Google Chrome *
 ~~~~~~~~~~~~~~~
-The major web browser.
 
 Debian / Ubuntu / Windows:
     Get it from the official `download page <https://www.google.se/chrome/>`_ and install it.
 
 Chromium *
 ~~~~~~~~~~
-If you want an open source alternative.
 
 Debian/Ubuntu:
     ``$ sudo apt-get install chromium``
@@ -59,9 +36,8 @@ Windows:
 `Visual Studio Code (vscode) <https://code.visualstudio.com/>`_ with `extensions <https://marketplace.visualstudio.com/>`_ *
 ----------------------------------------------------------------------------------------------------------------------------
 
-A code editor developed by Microsoft, freely available to download and use for
-the most common platforms, even in Linux based operating systems, enhanced by
-some required extensions.
+A code editor developed by Microsoft for most common platforms, even in Linux
+based operating systems, enhanced by some required extensions.
 
 Follow the installation instructions for the editor itself and the extensions
 in the links below to get them too.
@@ -78,9 +54,8 @@ Debian / Ubuntu / Windows:
 `NodeJS <https://nodejs.org/en/download/>`_ *
 ---------------------------------------------
 
-An open source server framework, it's free, runs on various platforms and uses
-JavaScript. It's used to run the frontend and comes with the NPM package manager
-used to install some additional required packages.
+An open source server framework running on JavaScript, It runs the frontend and
+comes with the NPM package manager used to install additional required packages.
 
 Debian / Ubuntu:
     .. note::
@@ -119,7 +94,7 @@ Windows:
 `Git <https://git-scm.com/downloads>`_ *
 ----------------------------------------
 
-Git is a distributed version control system, used to manage the frontend code
+Git is the distributed version control system to manage the frontend code
 repositories.
 
 Windows:

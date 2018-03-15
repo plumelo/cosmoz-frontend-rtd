@@ -16,14 +16,14 @@ URL app state
 The app state can be controlled by different parts of the URL in different ways.
 It can be described as::
 
-	https://<environment>.cosmoz.com/?<query parameters>#!/<hash (bang) parameters>#<hash hash parameters>
+	https://<environment subdomain>.cosmoz.com/?<query parameters>#!/<hash (bang) parameters>#<hash hash parameters>
 
 Example::
 
 	https://app.cosmoz.com/?cpl=1.18.19#!/purchase/invoices/list-queue#invoices-list-queue-core-tab=queue&invoices-list-core-table-groupOn&invoices-list-core-table-sortOn=dueDate
 
-Environment
-^^^^^^^^^^^
+Environment subdomain
+^^^^^^^^^^^^^^^^^^^^^
 
 The environment subdomain part of the URL defines what environment to use. This
 will stick in the URL during navigation and there are some to choose from:
@@ -33,7 +33,7 @@ will stick in the URL during navigation and there are some to choose from:
 * ``demo`` - Demo environment, for demos
 * ``staging`` - Staging environment, for development
 
-Please note that the ``<environment>.cosmoz.com`` is replaced with
+Please note that the ``<environment subdomain>.cosmoz.com`` is replaced with
 ``localhost:3000`` during frontend development because the frontend then runs
 locally. The backend does not however, so it is important to set the desired one
 in ``app/cz.config.js`` using the ``backendBaseUri`` parameter.

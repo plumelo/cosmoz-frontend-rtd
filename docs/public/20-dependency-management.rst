@@ -12,6 +12,8 @@ Dependency management
 -  Any public components/repos can only depend on publically available
    components
 
+.. _installing-updating-component-dependencies:
+
 Installing/updating component dependencies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

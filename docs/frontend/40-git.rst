@@ -25,11 +25,26 @@ Develop the feature and push the branch to GitHub::
 Then head to https://github.com/Neovici/cosmoz-frontend/branches/yours and find your newly created branch,
 and press the :guilabel:`New pull request` button.
 Make sure the PR base is the ``master`` branch and describe the PR in the form.
-Assign yourself the PR, and if known, assign one or more reviewers, labels and projects.
+
 Press :guilabel:`Create pull request`.
+
+If needed, apply labels and projects to the Pull Request.
 
 .. seealso:: https://help.github.com/articles/creating-a-pull-request/
 
+PR reviewers
+------------
+
+After you create a pull request, ask one or more person to review the changes you've proposed.
+
+Most of the time, you can request a single review from the team "Neovici/frontend". This will mean you expect 
+a review from a single member of the team. Anyone in the team can review the Pull Request, and if approved,
+then the reviewer will merge the Pull Requst.
+
+If you think the Pull Request should be reviewed by specific persons, you can request a review from these persons.
+In that case, the last reviewers will merge the Pull Request if if was approved by all reviewers.
+
+.. seealso:: https://help.github.com/articles/requesting-a-pull-request-review/
 
 PR scope
 --------
@@ -70,7 +85,13 @@ When reviewing a PR, as a guideline, consider the following for the new code:
 Merging a PR
 ------------
 
-If you are the only, or last, reviewer of a PR, you should also merge the PR.
+If you are the only, or last, requested reviewer of a PR, you should also merge the PR.
+
+If a review has been requested from a team, and you are a member of this team, you should also merge 
+the Pull Request.
+
+However, if you're uncertain about the Pull Request, you might submit a feedback in your review, and request 
+another review from another person.
 
 :guilabel:`Rebase and merge` will add the commits directly on master.
 This is a good starting point and should be used for any PR only containing one commit.
@@ -103,7 +124,7 @@ need a way to guarantee consistent builds across environments.
 ``master`` branch
 -----------------
 
-``master`` branch will get all updates indended to reach the production environment.
+``master`` branch will get all updates intended to reach the production environment.
 This should be done by creating a branch and a PR for code that is intended for next production release.
 
 Commits added to the master branch will build, and on success, deploy to Cosmoz integration environment.

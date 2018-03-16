@@ -4,36 +4,51 @@ Repository setup
 Creating a repository
 ---------------------
 
-Be sure to create it under the https://github.com/Neovici organization
+Public element components need to have their own repositories on GitHub.
 
+Make sure to create it under the https://github.com/Neovici organization.
 
 .. _github-readme:
 
+Required files in a public element component repository
+--------------------------------------------------------
+
 :file:`README.md`
------------------
+~~~~~~~~~~~~~~~~~
+This file should contain badges for GitHub, information about what the component does, how
+to install it, how to use it, an inline demo for Webcomponents.org and so on.
 
 Badges
-~~~~~~
+	Badges are small informational signs that appear when the file is
+	displayed on GitHub, showing status for various services. Start the file
+	by adding these.
 
-Travis-CI::
+	.. note:: Badge URLs suggested here need to be adjusted for the relevant repo.
 
-    [![Build Status](https://travis-ci.org/Neovici/cosmoz-bottom-bar.svg?branch=master)](https://travis-ci.org/Neovici/cosmoz-bottom-bar)
+	Travis-CI
+		This badge shows the component build status for Travis-CI.
 
-Webcomponents.org::
+		.. code-block:: text
 
-    [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Neovici/cosmoz-bottom-bar)
+			[![Build Status](https://travis-ci.org/Neovici/cosmoz-bottom-bar.svg?branch=master)](https://travis-ci.org/Neovici/cosmoz-bottom-bar)
 
-.. note:: Badge URLs needs to be adjusted for the relevant repo.
+	Webcomponents.org
+		This badge shows the component publication status on Webcomponents.org.
+
+		.. code-block:: text
+
+			[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Neovici/cosmoz-bottom-bar)
 
 Inline demo
-~~~~~~~~~~~
+	There need to be an inline demo included in the file, used by
+	:ref:`webcomponents-org`.
 
-For :ref:`webcomponents-org`
-
-.. _eslintrc-json:
+	.. _eslintrc-json:
 
 :file:`.eslintrc.json`
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
+
+This file holds data for ESLint validation.
 
 .. code-block:: json
 
@@ -65,7 +80,10 @@ For :ref:`webcomponents-org`
 			],
 			"arrow-spacing": [
 				"error",
-				{ "before": true, "after": true }
+				{
+					"before": true,
+					"after": true
+				}
 			],
 			"brace-style": "error",
 			"camelcase": "error",
@@ -95,14 +113,14 @@ For :ref:`webcomponents-org`
 			"key-spacing": [
 				"error",
 				{
-						"afterColon": true,
-						"beforeColon": false
+					"afterColon": true,
+					"beforeColon": false
 				}
 			],
 			"keyword-spacing": [
 				"error",
 				{
-						"before": true
+					"before": true
 				}
 			],
 			"no-console": "off",
@@ -147,8 +165,8 @@ For :ref:`webcomponents-org`
 			"space-before-function-paren": [
 				"error",
 				{
-						"anonymous": "always",
-						"named": "never"
+					"anonymous": "always",
+					"named": "never"
 				}
 			],
 			"space-in-parens": "error",
@@ -164,36 +182,71 @@ License
 
 Open Source Cosmoz components use the Apache-2.0 license.
 
-This should be set/present in:
+This should be set or present in the files noted below.
 
-* ``bower.json``
-* ``package.json``
+:file:`.bower.json`
+~~~~~~~~~~~~~~~~~~~
 
-Also, a ``LICENSE`` file containing the Apache 2.0 License should be present in the repository root.
+The Bower package manager configuration, add a license property with as the value set to the Apache 2.0 license. to this file.
+
+Omit the ``{`` and ``}`` if the file already has these.
+
+.. code-block:: json
+
+	{
+		"license": "Apache-2.0"
+	}
+
+:file:`.package.json`
+~~~~~~~~~~~~~~~~~~~~~
+
+The NPM package manager configuration, add a license property with as the value set to the Apache 2.0 license. to this file.
+
+Omit the ``{`` and ``}`` if the file already has these.
+
+.. code-block:: json
+
+	{
+		"license": "Apache-2.0"
+	}
+
+:file:`LICENSE / LICENSE.md`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This file should contain the  `Apache 2.0 License <https://www.apache.org/licenses/LICENSE-2.0.txt>`_ in plain text format.
+
+License comment
+~~~~~~~~~~~~~~~
 
 Finally, all applicable files should have the following notice enclosed in the appropriate comment syntax for the file format::
 
-    Copyright 2017 Neovici
+	Copyright 2017-2018 Neovici
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
 
-        http://www.apache.org/licenses/LICENSE-2.0
+		http://www.apache.org/licenses/LICENSE-2.0
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
 
 Integrations
 ------------
 
+There are some integrations needed to be done for the component to make various
+services push information about component changes to Slack.
+
 Travis-CI + Slack
 ~~~~~~~~~~~~~~~~~
 
-In the repo, run::
+Travis-CI and Slack integration enables build notifications for the component
+directly in Slack.
+
+In the repository, run::
 
     $ travis encrypt "<1password-devops-password>" --add notifications.slack
 
@@ -204,20 +257,20 @@ In the repo, run::
 GitHub + Slack
 ~~~~~~~~~~~~~~
 
-Adjust GitHub integration at https://neovici.slack.com/apps/manage, add repo
+GitHub and Slack integration enables repository change notifications directly
+in Slack.
 
+Adjust GitHub integration at https://neovici.slack.com/apps/manage, add repo.
 
 .. _cosmoz-elements:
 
-cosmoz-elements
----------------
+The Cosmoz elements collection
+------------------------------
 
-https://github.com/Neovici/cosmoz-elements
+Add the component to the `cosmoz-elements <https://github.com/Neovici/cosmoz-elements>`_ collection.
 
-Add the element to the ``cosmoz-elements`` collection.
-
-Also, some files that are common between all elements can be hosted here.
+Also, some files that are common between all components can be hosted here.
 
 .. todo:: What files? CONTRIBUTING?
 
-.. todo:: publish collection to wc.org
+.. todo:: Publish collection to webcomponents.org.

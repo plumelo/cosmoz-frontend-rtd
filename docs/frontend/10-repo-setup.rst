@@ -1,19 +1,38 @@
 Repository setup
-----------------
+================
 
--  Make sure you have the ``Developer`` role in the ``Cosmoz 3`` project in Redmine
+Get Developer role
+------------------
 
-    If not, make an `Access Request <https://redmine.neovici.se/projects/access-requests/issues/new>`_
+Redmine is a web-based project management and issue tracking tool used to track
+the project.
 
--  Check out the code from the repository::
+To get access, create an `Access Request
+<https://redmine.neovici.se/projects/access-requests/issues/new>`_ and request a
+``Developer`` role in the ``Cosmoz 3`` project.
+
+Get the code
+------------
+
+Choose a directory to work in. Then check out the code from the repository at
+GitHub and go to the repository root directory that gets created during the
+repository cloning process::
 
     $ git clone https://username@git.neovici.se/development/cosmoz3/frontend.git cosmoz3-frontend
     $ cd cosmoz3-frontend
 
-* Add commit-hook, to make sure you include Redmine issue number or NOREF tags.
-  This will abort if they are missing in your commit messages.
+Add a commit hook
+-----------------
 
-Create the file ``.git/hooks/commit-msg`` with the following content:
+To make sure you include Redmine issue number or a ``NOREF`` tag in the commit
+messages you need to add a commit hook to your working copy of the repository.
+This will automatically abort commits if they are missing the required
+information.
+
+:file:`.git/hooks/commit-msg`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Create this file  with the following content:
 
 .. code-block:: bash
 
@@ -26,10 +45,22 @@ Create the file ``.git/hooks/commit-msg`` with the following content:
         exit 1
     fi
 
-* Optionally, add pre-commit hook, to check for invalid root commits and to
-  show ESLint and Polymer Lint results with an option to abort the commit.
+.. note::
+    Tip. It is possible to edit the last commit message as long as it has not
+    been pushed remote by running ``git commit --amend``. This way you can add
+    issue number afterwards.
 
-Create the file ``.git/hooks/pre-commit`` with the following content:
+Add a pre-commit hook
+---------------------
+
+Optionally, add pre-commit hook to you working copy of the repository to check
+for invalid root commits and to show ESLint and Polymer Lint results with an
+option to abort the commit.
+
+:file:`.git/hooks/pre-commit`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Create this file with the following content:
 
 .. code-block:: bash
 
@@ -66,14 +97,39 @@ Create the file ``.git/hooks/pre-commit`` with the following content:
         esac
     done
 
--  Install project development tools (ESLint, gulp plugins, etc)::
+Install development tools
+-------------------------
+
+Some project development tools - ESLint, gulp plugins and so on - are required
+to develop, test and run the frontend.
+
+Install these by standing in the root of the repository and run this::
 
     $ npm install
 
-.. todo:: ``yarn install`` (seems to work, faster)
+.. todo:: Replace with ``yarn install``, seems to work and does it faster.
 
--  Install frontend dependencies into the directory::
+Install dependencies
+--------------------
+
+The frontend has several dependencies that are required to be present in the
+``bower_components`` directory.
+
+Go to the root directory of the repository and run this to install them::
 
     $ bower install
 
-.. todo:: ``polymer install`` ? (Currently wraps bower, seems to work)
+.. todo:: Replace with ``polymer install``. Currently wraps bower and it seems
+    to work.
+
+Update dependencies
+-------------------
+
+It is necessary to update the frontend dependencies regularly.
+
+Do this standing in the repository root directory to update them::
+
+    $ bower cache clean
+    $ bower install
+
+.. todo:: Replace ``bower`` with something better.

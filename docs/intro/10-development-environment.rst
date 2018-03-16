@@ -1,53 +1,183 @@
-Development Environment
------------------------
+Development environment
+=======================
+
+The frontend development environment consists of various parts of software
+working together.
+
+Various operating systems are supported - Debian, Ubuntu and Windows. The
+used software is free of charge and it's possible to locally run only open
+source software if you like to.
+
+Things marked with an asterisk (*) are required.
+
+Google Chrome / Chromium *
+--------------------------
+
+Google Chrome is the target web
+browser, but Chromium works just as good as an open source alternative.
+
+Google Chrome *
+~~~~~~~~~~~~~~~
+
+Debian / Ubuntu / Windows:
+    Get it from the official `download page <https://www.google.se/chrome/>`_ and install it.
+
+Chromium *
+~~~~~~~~~~
+
+Debian/Ubuntu:
+    ``$ sudo apt-get install chromium``
+
+Windows:
+    Get it from the `download page <https://chromium.woolyss.com/download/>`_ and install it.
 
 .. _vscode:
 
-`Visual Studio Code (vscode) <https://code.visualstudio.com/>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Visual Studio Code (vscode) <https://code.visualstudio.com/>`_ with `extensions <https://marketplace.visualstudio.com/>`_ *
+----------------------------------------------------------------------------------------------------------------------------
 
-A code editor developed by Microsoft, freely available to download and use, even in Linux OS:es.
+A code editor developed by Microsoft for most common platforms, even in Linux
+based operating systems, enhanced by some required extensions.
 
-`Extensions to vscode <https://marketplace.visualstudio.com/>`_
+Follow the installation instructions for the editor itself and the extensions
+in the links below to get them too.
 
-Follow the installation instructions for each of them below to install them in vscode.
+Debian / Ubuntu / Windows:
+    * `Visual Studio Code <https://code.visualstudio.com/>`_ * - The editor itself
 
-* `ESLint <https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint>`_ - Integrates ESLint into VS Code
-         
-* `polymer-ide <https://marketplace.visualstudio.com/items?itemName=polymer.polymer-ide>`_ - Provides linting, autocompletion, and more for web components
+    * `ESLint <https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint>`_ * - Integrates ESLint into VS Code
 
-`NodeJS <https://nodejs.org/en/download/>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    * `polymer-ide <https://marketplace.visualstudio.com/items?itemName=polymer.polymer-ide>`_ * - Provides linting, autocompletion, and more for web components
 
-Note to Debian and other similar Linux based OS developers: the NodeJS version in the OS repos are outdated
-(for Debian Stable anyway…). Follow the instructions at https://nodejs.org/en/download/package-manager/
-to get an updated version of NodeJS.
+    * `Marketplace <https://marketplace.visualstudio.com/>`_ - For the inspired to find more extensions
 
-NPM install of Gulp (web server), bower (package manager), Polymer (library)::
+`NodeJS <https://nodejs.org/en/download/>`_ *
+---------------------------------------------
 
-    $ sudo npm install -g gulp bower polymer-cli
+An open source server framework running on JavaScript, It runs the frontend and
+comes with the NPM package manager used to install additional required packages.
 
-.. todo:: Replace bower with yarn
+Debian / Ubuntu:
+    .. note::
+        Debian and other similar Linux based operating system developers: the
+        NodeJS version in the OS repository is outdated (for Debian Stable at
+        least).
 
-.. todo:: Drop dependency for ``gulp``, use ``polymer build`` / ``polymer serve``
+    Follow the instructions on the `Installing Node.js via package manager <https://nodejs.org/en/download/package-manager/>`_ page to get an updated version of NodeJS.
 
-.. todo:: Don't use ``sudo`` with npm
+Windows:
+    Download the installer from the official `download page <https://nodejs.org/en/download/>`_ and and run it.
+
+Gulp, Bower and Polymer CLI *
+-----------------------------
+
+Gulp is a toolkit for automating painful or time-consuming tasks in your
+development workflow, Bower is a front-end package manager and Polymer CLI is
+the official command line tool for Polymer projects and Web Components. They
+are all needed and installed through NPM.
+
+Debian / Ubuntu:
+    ``$ sudo npm install -g gulp bower polymer-cli``
+
+Windows:
+    ``npm install -g gulp bower polymer-cli``
+
+
+.. todo:: Replace bower with yarn.
+
+.. todo:: Drop dependency for ``gulp``, use ``polymer build`` / ``polymer serve``.
+
+.. todo:: Don't use ``sudo`` with npm.
 
 .. _git-setup:
 
-`Git <https://git-scm.com/downloads>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`Git <https://git-scm.com/downloads>`_ *
+----------------------------------------
 
-Debian/Ubuntu::
+Git is the distributed version control system to manage the frontend code
+repositories.
 
-    $ sudo apt-get install git
+Windows:
+    Download the installer from the `official page <https://git-scm.com/downloads>`_ and run it.
+
+Debian / Ubuntu:
+    ``$ sudo apt-get install git``
 
 Time
+----
+
+Make sure the time is correctly set on your computer as it is used when
+committing code and it will be noted in git log.
+
+Debian / Ubuntu:
+    .. note::
+        The recommended and following instructions will install ntpq, the
+        standard NTP query program, and query time servers. This will in
+        addition also keep the date and time updated automatically. If this is
+        not what you want, then you may manually `adjust the
+        time <https://wiki.debian.org/DateTime>`_ of the system.
+
+    ``$ sudo apt-get install ntp``
+
+    ``$ sudo ntpq -p``
+
+Windows:
+    Go to the control panel and adjust date and time, it is also recommended to
+    `enable synchronization with a time server <https://www.windowscentral.com/how-manage-time-servers-windows-10>`_ to keep it correct.
+
+Optional software
+-----------------
+
+Meld
 ~~~~
 
-Make sure the time is correctly set on your computer as it is used when committing and it will be noted in git log.
+A a visual diff and merge tool targeted at developers. Useful to compare
+file differences and similarities.
 
-Debian/Ubuntu::
+Debian / Ubuntu:
+    ``$ sudo apt-get install meld``
 
-    $ sudo apt-get install ntp
-    $ sudo ntpq -p
+Windows:
+    `Download <http://meldmerge.org/>`_ and run the installer.
+
+ModHeaders
+~~~~~~~~~~
+
+A Google Chrome / Chromium extension enabling the possibility to show
+the output of available-values API calls presented in the web browser
+console by modifying HTTP headers sent to the server.
+
+Google Chrome / Chromium:
+    Get the extension from the `Chrome Web Store <https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj>`_
+
+    Then click on the icon next to the address bar, then the plus (+)
+    and add:
+
+        Request header
+
+            Name: ``Accept``
+
+            Value: ``application/json``
+
+        Filter
+
+            Name: ``URL Pattern``
+
+            Value: ``*cosmoz*available*``
+
+Slack standalone application
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Slack is a cloud-based set of proprietary team collaboration tools and
+services used for collaboration. You can access it through the web, or
+via an standalone application if you like. The following instructions
+install that.
+
+Download the installer from the
+`official page <https://slack.com/downloads>`_.
+
+Debian / Ubuntu:
+    ``dpkg -i <downloaded file name>``
+
+Windows:
+    Run the downloaded installer file.

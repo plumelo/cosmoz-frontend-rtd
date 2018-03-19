@@ -11,25 +11,41 @@ To begin the installation of it, start by installing Ruby including header files
 which also will install RubyGems package manager (``gem``). Then install
 Travis-CI using RubyGems.
 
-.. note::
-    For Debian / Ubuntu please notice that the **gem** package manager and not
-    **apt** is used to install Travis-CI. Using apt results in that a completely
-    different and not related software gets installed. Make sure you use gem for
-    this installation.
+Debian / Ubuntu:
 
-Debian / Ubuntu::
+    .. note::
+        Please notice that the **gem** package manager and not
+        **apt** is used to install Travis-CI. Using apt results in that a completely
+        different and not related software gets installed. Make sure you use gem for
+        this installation.
 
-    $ sudo apt install ruby ruby-dev
-    $ sudo gem install travis
+    Install Ruby followed by Travis-CI::
+
+        $ sudo apt install ruby ruby-dev
+        $ sudo gem install travis
 
 Windows:
 
-    Visit the `Ruby installer webpage <https://rubyinstaller.org/>`_, download
-    and install it.
+    .. note::
+        Windows Vista or later is required to install the required version of
+        Ruby. It does not work to install older versions of Ruby to get around
+        this because Travis-CI requires a recent version.
 
-    Then in a console window, do:
+    Visit the `Ruby installer webpage <https://rubyinstaller.org/>`_ and
+    download the suggested version (in bold). Then run the installer.
 
-    ``gem install travis``
+    In the installation wizard check *Use UTF-8 as default external encoding*.
+
+    At the end of the setup wizard you can choose to *Run ridk install to
+    install MSYS2 and development toolchain.* This is optional and not
+    neccessary for Travis-CI, uncheck it if you want to save time and disk
+    space.
+
+    Open a command window and run::
+
+        gem install travis
+
+    Accept firewall message.
 
 .. todo:: Document
 
@@ -38,18 +54,16 @@ Windows:
 Travis-CI + Sauce Labs
 ----------------------
 
-
 Sauce Labs allows testing on multiple browsers in different virtual machines.
 This integration between Travis-CI and Sauce labs allows testing components on
 multiple browsers.
 
-
-
 .. note::
-	There is a `Youtube video <https://www.youtube.com/watch?v=afy_EEq_4Go>`_ describing the installation procedure mentioned here.
+    There is a `Youtube video <https://www.youtube.com/watch?v=afy_EEq_4Go>`_
+    describing the installation procedure mentioned here.
 
 Setting up a Travis-CI account
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Go to `Travis-CI <https://travis-ci.org/>`_ webpage and create a Travis-CI by
 signing in with the GitHub credentials.
@@ -62,7 +76,7 @@ This links Travis-CI to the GitHub repository, so when contents are pushed to
 GitHub, then GitHub will communicate with Travis-CI.
 
 Setting up a Sauce Labs account
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Go to `Sauce Labs Open Sauce <https://saucelabs.com/open-source>`_ webpage and
 create an account there too.
@@ -113,7 +127,6 @@ so it looks like this::
 
     - xvfb-run wct --skip-plugin sauce
 
-
 For the opposite when testing against Sauce Labs, then only the list of browsers
 defined in the configuration should be used. Therefore edit the if section::
 
@@ -143,4 +156,5 @@ Make a first commit and push to initialize the integration::
 	$ git commit -m "Adding Travis-CI support."
 	$ git push
 
-Go back to Travis-CI webpage to display the output of the test. First comes the local browsers, and in a little while the browsers tested on Sauce Labs.
+Go back to Travis-CI webpage to display the output of the test. First comes the
+local browsers, and in a little while the browsers tested on Sauce Labs.

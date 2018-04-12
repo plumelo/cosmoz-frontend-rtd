@@ -29,9 +29,9 @@ The environment subdomain part of the URL defines what environment to use. This
 will stick in the URL during navigation and there are some to choose from:
 
 * ``app`` - Production environment (used in the example)
+* ``alpha`` - Alpha environment, for development
 * ``beta`` - Beta environment, for development
 * ``demo`` - Demo environment, for demos
-* ``staging`` - Staging environment, for development
 
 Please note that the ``<environment subdomain>.cosmoz.com`` is replaced with
 ``localhost:3000`` during frontend development because the frontend then runs

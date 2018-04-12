@@ -22,40 +22,34 @@ directory by using the menus:
 Set the backend
 ---------------
 
-The frontend needs to be configured to use the correct backend. This is done in a
-configuration file in the repository:
+The default backend for development is the alpha backend. The frontend can to be
+configured to use an different backend by setting it in the configuration file
+in the repository.
 
-:file:`app/cz.config.js`
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Open this file and verify that the ``backendBaseUri`` property points to the
-right backend and that ``googleClientId`` has the right value for Google
-sign-in.
+    .. seealso:: :ref:`backend-config`
 
 Start the web server
 --------------------
 
-The frontend runs on a local web server powered by gulp toolkit. To start it you
+The frontend runs on a local web server powered by yarn. To start it you
 need to go to the repository root directory and then run the following::
 
-    $ gulp serve
+    $ yarn start
 
-.. note::
-    ``polymer serve`` almost works when run in ``app/`` folder in repo.
-
-The start of gulp will also open the default web browser when the server is
+The start of yarn will also open the default web browser when the server is
 ready and point it to http://localhost:3000 where the frontend is available.
 
-Login in to beta
-----------------
+Login in to alpha and beta
+--------------------------
 
-Login using the beta backend using Google authentication directly through
-the local frontend is currently not possible due to invalid origin for the
-sign in process. Trying to login that way results in a temporary server error.
+Login using the alpha or beta backend using Google authentication directly
+through the local frontend is currently not possible due to invalid origin for
+the sign in process. Trying to login that way results in sign errors.
 
-To login, do instead visit https://beta.cosmoz.com and use the Google sign in
-there, then go back to http://localhost:3000 and reload the page. You should
-now be logged in because both uses the same backend.
+To login, do instead visit https://alpha.cosmoz.com for alpha or
+https://beta.cosmoz.com for beta and use the Google sign in there, then go back
+to http://localhost:3000 and reload the page. You should now be logged in
+because both uses the same backend.
 
 URL format
 ----------

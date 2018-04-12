@@ -22,6 +22,10 @@ help others.
 
     Used to store the source code(?).
 
+  `Bower <https://bower.io/>`_
+    A package manager for the web. Used to keep frontend components up to date.
+    Uses git among others to fetch items. Replaced by Yarn.
+
   CD
     `Continuous delivery <https://en.wikipedia.org/wiki/Continuous_delivery>`_
 
@@ -31,10 +35,6 @@ help others.
   Swagger
     An API reference for the backend, also available in the bottom right corner
     in Cosmoz debug
-
-  `Bower <https://bower.io/>`_
-    A package manager for the web. Used to keep frontend components up to date.
-    Uses git among others to fetch items.
 
   `Git <https://git-scm.com/>`_
     Git is a version control system (VCS) for tracking changes in computer
@@ -47,7 +47,7 @@ help others.
   `Gulp <http://gulpjs.com/>`_
 
     Also called gulp.js, described as an automated task runner. Used as the web
-    server.
+    server. Replaced by Yarn.
 
   `I18next <https://www.i18next.com/>`_
 
@@ -90,3 +90,7 @@ help others.
 
   XHR
     `XMLHttpRequest <https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest>`_
+
+  `Yarn <https://yarnpkg.com/>`_
+
+    A package manager for JavaScript. Replaces Bower.

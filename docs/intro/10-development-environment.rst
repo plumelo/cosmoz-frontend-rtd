@@ -72,6 +72,21 @@ Windows:
 
 .. _yarn-setup:
 
+Bower *
+-------
+
+Bower is a front-end package manager. It is needed and installed through NPM.
+
+Debian / Ubuntu:
+    ``$ sudo npm install -g bower``
+
+Windows:
+    ``npm install -g bower``
+
+.. todo:: Replace bower with yarn.
+
+.. todo:: Don't use ``sudo`` with npm.
+
 Yarn *
 ------
 

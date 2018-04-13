@@ -44,11 +44,6 @@ help others.
   `GitHub <https://github.com/>`_
     GitHub is a web-based Git repository hosting service.
 
-  `Gulp <http://gulpjs.com/>`_
-
-    Also called gulp.js, described as an automated task runner. Used as the web
-    server. Replaced by Yarn.
-
   `I18next <https://www.i18next.com/>`_
 
     i18next is a popular internationalization library for browser or any other

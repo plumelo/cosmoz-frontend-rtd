@@ -134,7 +134,7 @@ Local documentation for private components
 
 The private components are located in ``app/polymer`` under the repository root
 directory. There is a simple, crude way to access the component documentation
-for these when ``gulp serve`` server is running:
+for these when ``yarn start`` server is running:
 
     http://localhost:3000/polymer/<component name>/index.html
 
@@ -144,7 +144,7 @@ These components should be documented the same way as the public repository
 .. todo::
     Create a basic listing/catalog of the elements we have.
 
-    Make sure ``gulp serve`` serves ``index.html`` for any directory.
+    Make sure ``yarn start`` serves ``index.html`` for any directory.
 
     Or preferably implement something like
     https://github.com/Polymer/polymer-element-catalog.

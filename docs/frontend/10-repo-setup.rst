@@ -64,24 +64,16 @@ Create this file with the following content:
 
 .. code-block:: bash
 
-    #!/bin/bash
-
     if [ "$(id -u)" = "0" ]; then
         echo "Root commits are not allowed, because this affects file permissions."
         exit 1
     fi
 
-    echo '--- ESLint report ---';
-    node_modules/.bin/eslint --ext .js,.html app/views/ app/scripts/ app/polymer/
-	if [ $? -ne 0 ]; then
-		echo "ESLint must pass to allow commit."
-		exit 1;
-	fi
-
-    echo '--- Polymer Lint report ---';
-    polymer lint
-
-    echo '---';
+    yarn lint
+    if [ $? -ne 0 ]; then
+        echo "Yarn Lint must pass to allow commit (the return value was: $?)."
+        exit 1;
+    fi
 
     # read user input, assigns stdin to keyboard
     # because stdin inside git hook is not available
@@ -97,30 +89,21 @@ Create this file with the following content:
         esac
     done
 
-Install development tools
--------------------------
+Install development tools and dependencies
+------------------------------------------
 
-Some project development tools - ESLint, gulp plugins and so on - are required
+Some project development tools - ESLint, plugins and so on - are required
 to develop, test and run the frontend.
 
-Install these by standing in the root of the repository and run this::
-
-    $ npm install
-
-.. todo:: Replace with ``yarn install``, seems to work and does it faster.
-
-Install dependencies
---------------------
-
-The frontend has several dependencies that are required to be present in the
+The frontend also has several dependencies that are required to be present in the
 ``bower_components`` directory.
 
-Go to the root directory of the repository and run this to install them::
+Install all these by standing in the root of the repository and run this::
 
-    $ bower install
+    $ yarn install
 
-.. todo:: Replace with ``polymer install``. Currently wraps bower and it seems
-    to work.
+This will run the ``postinstall`` script from package.json, which will run
+``polymer install``.
 
 Update dependencies
 -------------------
@@ -129,7 +112,5 @@ It is necessary to update the frontend dependencies regularly.
 
 Do this standing in the repository root directory to update them::
 
-    $ bower cache clean
-    $ bower install
-
-.. todo:: Replace ``bower`` with something better.
+    $ rm -rf app/bower_components/
+    $ yarn postinstall

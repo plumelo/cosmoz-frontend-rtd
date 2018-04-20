@@ -20,7 +20,7 @@ Google Chrome *
 ~~~~~~~~~~~~~~~
 
 Debian / Ubuntu / Windows:
-    Get it from the official `download page <https://www.google.se/chrome/>`_ and install it.
+    Get it from the official `Google Chrome download page <https://www.google.se/chrome/>`_ and install it.
 
 Chromium *
 ~~~~~~~~~~
@@ -29,7 +29,7 @@ Debian/Ubuntu:
     ``$ sudo apt-get install chromium``
 
 Windows:
-    Get it from the `download page <https://chromium.woolyss.com/download/>`_ and install it.
+    Get it from the `Chromium download page <https://chromium.woolyss.com/download/>`_ and install it.
 
 .. _vscode:
 
@@ -57,6 +57,8 @@ Debian / Ubuntu / Windows:
 An open source server framework running on JavaScript, It runs the frontend and
 comes with the NPM package manager used to install additional required packages.
 
+Version 8 and above of NodeJS is required.
+
 Debian / Ubuntu:
     .. note::
         Debian and other similar Linux based operating system developers: the
@@ -66,28 +68,42 @@ Debian / Ubuntu:
     Follow the instructions on the `Installing Node.js via package manager <https://nodejs.org/en/download/package-manager/>`_ page to get an updated version of NodeJS.
 
 Windows:
-    Download the installer from the official `download page <https://nodejs.org/en/download/>`_ and and run it.
+    Download the installer from the official `NodeJS download page <https://nodejs.org/en/download/>`_ and and run it.
 
-Gulp, Bower and Polymer CLI *
------------------------------
+.. _yarn-setup:
 
-Gulp is a toolkit for automating painful or time-consuming tasks in your
-development workflow, Bower is a front-end package manager and Polymer CLI is
-the official command line tool for Polymer projects and Web Components. They
-are all needed and installed through NPM.
+Bower *
+-------
+
+Bower is a front-end package manager. It is needed and installed through NPM.
 
 Debian / Ubuntu:
-    ``$ sudo npm install -g gulp bower polymer-cli``
+    ``$ sudo npm install -g bower``
 
 Windows:
-    ``npm install -g gulp bower polymer-cli``
-
+    ``npm install -g bower``
 
 .. todo:: Replace bower with yarn.
 
-.. todo:: Drop dependency for ``gulp``, use ``polymer build`` / ``polymer serve``.
-
 .. todo:: Don't use ``sudo`` with npm.
+
+Yarn *
+------
+
+Yarn is a package manager for JavaScript that is also used to run the frontend.
+It is required to run the frontend and it needs NodeJS.
+
+The following instructions are a summary, for more detailed information please
+see the official `installation instructions at Yarn <https://yarnpkg.com/en/docs/install>`_.
+
+**Debian / Ubuntu**::
+
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    sudo apt-get update && sudo apt-get install yarn
+
+Windows:
+    `Download <https://yarnpkg.com/en/docs/install>`_ and run the installer from Yarn.
 
 .. _git-setup:
 
@@ -98,7 +114,7 @@ Git is the distributed version control system to manage the frontend code
 repositories.
 
 Windows:
-    Download the installer from the `official page <https://git-scm.com/downloads>`_ and run it.
+    Download the installer from the `official Git page <https://git-scm.com/downloads>`_ and run it.
 
 Debian / Ubuntu:
     ``$ sudo apt-get install git``
@@ -138,7 +154,8 @@ Debian / Ubuntu:
     ``$ sudo apt-get install meld``
 
 Windows:
-    `Download <http://meldmerge.org/>`_ and run the installer.
+    Download it from the official `Meld page <http://meldmerge.org/>`_ and run
+    the installer.
 
 ModHeaders
 ~~~~~~~~~~
@@ -174,7 +191,7 @@ via an standalone application if you like. The following instructions
 install that.
 
 Download the installer from the
-`official page <https://slack.com/downloads>`_.
+`official Slack page <https://slack.com/downloads>`_.
 
 Debian / Ubuntu:
     ``dpkg -i <downloaded file name>``

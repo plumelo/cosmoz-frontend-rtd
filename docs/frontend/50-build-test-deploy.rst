@@ -1,17 +1,15 @@
-Continuous integration and continuous deployment
+Continuous integration and deployment
 ================================================
-
-Application is setup for CI/CD with Travis at https://travis-ci.com/Neovici/cosmoz-frontend.
 
 Continus integration
 --------------------
+
+Application is setup for CI with Travis at https://travis-ci.com/Neovici/cosmoz-frontend.
 
 A travis build is triggered when any the following occurs:
 
 * a commit is pushed to branches master or demo
 * a pull request is submitted
-* a tag matching the following regexp /^v\d+\.\d+(\.\d+)?(-\S*)?$/, for example v3.0.1,  is pushed
-* a tag is merged to branch prod
 
 The build steps are the following:
 
@@ -29,27 +27,24 @@ The build steps are the following:
 
    This step will run the build script.
 
-   Depending on the branch, tag or PR being built, the script will determine the suitable build environment.
-
-#. deploy
-
-   Depending on the branch or tag being built, automatic deployment will occur. See below.
-
-Continus deployment
+Deployment
 -------------------
 
-A travis build will be automatically deployed to the following environment:
+Application is setup for CD with Visual Studio Team Services (VSTS) at https://neovici.visualstudio.com/Cosmoz3-frontend.
 
-* staging: for builds triggered by a commit to master branch
-* demo: for builds triggered by a commit to demo branch 
-* beta: for builds triggered by a tag matching the version regexp/
-* prod: for build triggered by a tag being merged to prod.
+A VSTS build is triggered when a tag is pushed to the cosmoz Frontend github repository.
 
-Building and deploying the beta environment
+The build definition performs the same steps as the Travis build. On success, the build will publish a zip file artifact with the content of the dist folder.
+
+This release will be automatically deployed to the alpha environment at https://alpha.cosmoz.com.
+
+Deployment of the release to beta and prod environement has to be done manually.
+
+Building and deploying the alpha environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Manually
-""""""""
+From the command line
+"""""""""""""""""""""
 
 ::
 
@@ -70,23 +65,47 @@ Go the the github "new release" page at https://github.com/Neovici/cosmoz-fronte
 
 Fill the fields, ensuring the tag name follows the vX.Y.Z pattern, then click on "Publish release".
 
-Building and and deploying the prod environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Deploying the beta and prod environments
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The production environment is built and deployed when a tag is merged to the prod branch.
+Go the Releases page on VSTS https://neovici.visualstudio.com/Cosmoz3-frontend/_release?definitionId=1&_a=releases
 
-If there are other commits than the merge commit, the build will fail and no deployment will be made.
+On this page, you can view all the releases that have been generated on VSTS for the frontend
 
-Manually
-""""""""
+.. image:: vsts-releases.png
+    :alt: All releases page
 
-::
+The release title column contains the tag name that produces a release.
+The environments column contains 3 rectangles representing the 3 environments: alpha, beta and prod.
+A grayed rectangle indicates the release has not been deployed to the environment, while a green one means that the
+release has been deployed to the environment.
 
-    git checkout prod
-    git merge vX.Y.Z
-    git push origin
+You can determine the latest deployed release for an environment by looking for the latest green rectangle for 
+that environment.
 
-From the github web interface
-"""""""""""""""""""""""""""""
+Normally, deployment to alpha is done automatically after the build, except when a build is triggered manually.
 
-TODO: is it possible ?
+In order to deploy to beta or prod, open the release to deploy by clicking on its title.
+
+In the release Summary page, click on the "..." button close to the environment you want to deploy, then click on deploy:
+
+.. image:: vsts-deploy.png
+    :alt: Release summary page
+
+When deploying to beta, deployment should start immediately, while prod deployment will require an additional approval.
+
+Pre-deployment approval for prod deployment
+"""""""""""""""""""""""""""""""""""""""""""
+
+When triggering a production deployment, a pre-deployment approval is required, by a different user than the one who triggered the 
+deployment.
+
+So if user A triggers a deployment to production, another user will have to login to VSTS and go to the releases page
+https://neovici.visualstudio.com/Cosmoz3-frontend/_release?releaseId=38&definitionId=1&_a=releases 
+
+In the "environements" column, the release waiting for deployment approval will be displayed with a |approve-icon| icon.
+
+.. |approve-icon| image:: approve-icon.png
+    :alt: Approve icon
+
+The second user can click on this icon and approve the deployment.

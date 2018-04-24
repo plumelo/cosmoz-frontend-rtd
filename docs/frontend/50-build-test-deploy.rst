@@ -41,7 +41,9 @@ This release will be automatically deployed to the alpha environment at https://
 Deployment of the release to beta and prod environement has to be done manually.
 
 Building and deploying the alpha environment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Building and deploying the alpha environment is triggered when a tag is pushed to the cosmoz Frontend github repository.
 
 From the command line
 """""""""""""""""""""
@@ -75,7 +77,7 @@ On this page, you can view all the releases that have been generated on VSTS for
 .. image:: vsts-releases.png
     :alt: All releases page
 
-The release title column contains the tag name that produces a release.
+The release title column contains the tag name that produced a release.
 The environments column contains 3 rectangles representing the 3 environments: alpha, beta and prod.
 A grayed rectangle indicates the release has not been deployed to the environment, while a green one means that the
 release has been deployed to the environment.

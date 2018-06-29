@@ -72,6 +72,23 @@ Windows:
 
 .. _yarn-setup:
 
+NPM *
+-------
+
+NPM is the package manager for JavaScript and the world’s largest software registry.
+Because ``yarn`` is used as the main package manager but we need a ``package-lock.json`` file for analysis and audit
+we create that file by using a package.json script:
+    ``"sync-npm": "rm -f package-lock.json && npm shrinkwrap && mv npm-shrinkwrap.json package-lock.json"``
+
+The ``sync-npm`` command should be called on ``postinstall`` to update the file when ``yarn.lock`` changes:
+    ``"postinstall": "other/commands && yarn sync-npm"``
+
+Starting with version 6 ``npm audit`` will list security vulnerabilities found in the currently installed packages.
+Simply running ``npm audit`` will show insecure packages with their dependency tree and if possible a way to fix them.
+Most of the time to fix a security issue we will need an update from the top level packages used.
+
+More info about this feature can be found `here <https://docs.npmjs.com/getting-started/running-a-security-audit>`_.
+
 Bower *
 -------
 
